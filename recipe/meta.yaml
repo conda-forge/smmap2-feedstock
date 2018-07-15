@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: smmap2
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/smmap2/smmap2-{{ version }}.tar.gz
-  sha256: c7530db63f15f09f8251094b22091298e82bf6c699a6b8344aaaef3f2e1276c3
+  sha256: dc216005e529d57007ace27048eb336dcecb7fc413cfb3b2f402bb25972b69c6
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
