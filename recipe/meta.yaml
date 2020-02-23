@@ -15,19 +15,22 @@ build:
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
   run:
     - python
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - smmap
 
 about:
   home: https://github.com/gitpython-developers/smmap
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'A pure python implementation of a sliding window memory map manager'
 
